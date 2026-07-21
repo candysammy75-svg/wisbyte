@@ -257,7 +257,11 @@ function joinAfkVoiceChannel(guild: import("discord.js").Guild) {
         // بيحاول يعمل reconnect لوحده
       } catch {
         logger.warn("AFK voice connection dropped — rejoining");
-        connection.destroy();
+        try {
+          if (connection.state.status !== VoiceConnectionStatus.Destroyed) {
+            connection.destroy();
+          }
+        } catch {}
         joinAfkVoiceChannel(guild);
       }
     });
