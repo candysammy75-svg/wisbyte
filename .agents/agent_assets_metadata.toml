@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "QXPMmLI9ZMpf7LVJTrasO"
+uri = "file://artifacts/api-server/src/bot.ts"
+type = "unspecified"
+title = "bot.ts — الكود الكامل"

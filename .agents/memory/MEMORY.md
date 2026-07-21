@@ -1,0 +1,2 @@
+- [Dragon Shop Bot conventions](dragon-bot-notes.md) — single giant bot.ts handles Discord logic; "room channel" == purchased store; admins = Administrator permission, not a fixed role.
+- [GitHub-imported artifact re-registration](imported-artifact-workflows.md) — artifact.toml files survive git import but `listArtifacts()`/managed workflows don't; use configureWorkflow as a stand-in instead of destructively re-bootstrapping.
